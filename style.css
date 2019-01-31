@@ -1,1 +1,73 @@
-// CSS
+.parallax {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+}
+
+.home-banner {
+	background-image: url("src/home-bg.jpg");
+}
+
+.menu-banner {
+	background-image: url("src/menu-bg.jpg");
+}
+
+.footer {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #343a40;
+}
+
+.center {
+	text-align: center;
+}
+
+.upper-case {
+	text-transform: uppercase;
+}
+
+.home-section {
+	background-color: rgba(0,0,0,0.25);
+    padding: 2rem;
+	margin-top: 25vh;
+	color: white;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+ul li {
+	list-style: none;
+}
+
+@media (max-width: 480px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+
+  h2, .h2 {
+    font-size: 95%;
+  }
+
+  h3, .h3 {
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+	
+	.menu-button {
+		 margin-top: 4rem;
+	}
+
+}
+
+

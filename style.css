@@ -4,16 +4,82 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin: 0;
-	height: 100vh;
+	margin: 0;	
+}
+
+.offers-banner {
+    padding: 9px;
+    background-color: #707887;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+	margin-bottom: 1.5rem;
+	font-weight: 400;
+}
+
+.font-heading {
+	font-size: 20px;	
+	font-weight: 500;
+}
+.offers-banner p {
+	font-weight: 500;
+}
+
+.contact-banner {
+	margin: 2rem 0 4rem 0;
+	border: 1px solid #343a40;	
+}
+
+.contact-banner > p {
+	padding: 10px;
+    background-color: #707887;
+	color: white;
+}
+
+.contact-banner section {
+    padding: 0 30px 30px 30px;
+}
+
+.offers-banner ul li {
+	color: black;
+}
+
+.contact-banner ul {
+	padding:5px;
+	background-color: white;
+	color: black;
+	text-align: left;
+	width: 100%;
+}
+
+
+.menu-banner > div {
+	height: 50vh;
+	width: 100%;
+}
+
+.carousel-item img {
+	height: 50vh; 
+	transform: scale(1.3);
+	transform-origin: 50% 50%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 8%;
+	background-color: #343a40;
+	opacity: 0.6;
+}
+
+.menu-svg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 1rem;
 }
 
 .home-banner {
 	background-image: url("src/home-bg.jpg");
-}
-
-.menu-banner {
-	background-image: url("src/menu-bg.jpg");
+	height: 80vh;
 }
 
 .footer {
@@ -49,25 +115,127 @@ ul li {
 }
 
 @media (max-width: 480px) {
-  h1, .h1 {
-    font-size: 30px;
-  }
+	h1, .h1 {
+		font-size: 30px;
+	}
 
-  h2, .h2 {
-    font-size: 95%;
-  }
+	h2, .h2 {
+		font-size: 95%;
+	}
 
-  h3, .h3 {
-    font-size: 95%;
-  }
+	h3, .h3 {
+		font-size: 95%;
+	}
+  
+	.home-container {
+		padding: 0;  
+	}
+	
+	.menu-banner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;		
+		padding: 0;
+	}
+	.menu-banner > div {
+		background-color: black;
+		margin-top: 1.5rem;
+	} 
 }
+
 
 @media (min-width: 768px) {
 	
 	.menu-button {
 		 margin-top: 4rem;
 	}
+	
+	.carousel-inner > .carousel-item > img {
 
+	}
+	
+	.menu-banner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+		margin-top: 1.5rem;
+		padding: 0;
+	}
+	
+	.menu-banner > div {
+		background-color: black;
+	}
 }
 
+/*** Animations ***/
 
+.flicker, .flicker2 {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: flicker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: flicker;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -ms-animation-duration: 3s;
+    -ms-animation-name: flicker;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: alternate;
+    animation-duration: 3s; 
+    animation-name: flicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+.flicker2 {
+	-webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+}
+
+@keyframes flicker {
+	0% {
+		opacity: .65;
+	}
+
+	5% {
+		opacity: .7;
+	}
+	7% {
+		opacity: .6;
+	}
+	10% {
+		opacity: .9;
+	}
+	12% {
+		opacity: 1;
+	}
+	65% {
+		opacity: 1;
+	}
+	67% {
+		opacity: .5;
+	}
+	69% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	78% {
+		opacity: .45;
+	}
+	80% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 1;
+	}
+	95% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .35;
+	}
+}

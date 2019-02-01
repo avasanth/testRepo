@@ -14,8 +14,8 @@
 		<title>Shilpi's Restaurant</title>		
 	</head>
 	<header>
-		<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Shilpi's Restaurant</a>
+		<nav class="container navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Restaurant</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -25,22 +25,26 @@
 						<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#menu">Menu</a>
+						<a class="nav-link" href="menu_items.html">Menu</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Special offers</a>
+						<a class="nav-link" href="#offers">Special offers</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	<body>	
-		<ul>
+	
+		
+		<ul class="container home-container">
+		
+			<!-- Home tab starts -->
 			<li class="jumbotron parallax home-banner" id="home">
-				<div class="container parallax-background">
+				<div class="container">
 					<div class="center home-section">
 						<h3>Call: +1 988 456 7858</h3>
 						<h1 class="upper-case">Welcome To Shilpi's Restaurant</h1>
@@ -48,28 +52,187 @@
 					</div>				
 				</div>
 			</li>
+			<!-- Home tab ends -->
 			
-			<li class="jumbotron parallax menu-banner" id="menu">
-				<div class="container parallax-background">
-					
+			
+			<!-- Menu tab starts -->
+			<li class="jumbotron menu-banner" id="menu">
+				<div class="menu-svg">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve" data-fallback="http://mercertavern.com/wp-content/themes/mercer/img/menu.png">
+						<g class="flicker" id="text">
+							<g>
+								<path style="fill:#FFFFFF;" d="M70.265,231.991v-64.329h4.289l27.875,31.736l27.919-31.736h4.289v64.329h-12.866l-0.043-37.311
+									l-19.299,21.443L83.131,194.68v37.311H70.265L70.265,231.991z"></path>
+								<path style="fill:#FFFFFF;" d="M147.288,231.991v-64.285l47.26-0.043v12.008h-34.395v13.724h25.775v11.965h-25.775v14.624h34.309
+									v12.008L147.288,231.991L147.288,231.991z"></path>
+								<path style="fill:#FFFFFF;" d="M207.499,231.991v-64.329h4.289l40.313,40.313v-40.313h12.866v64.329h-4.717l-39.883-39.883v39.883
+									H207.499L207.499,231.991z"></path>
+								<path style="fill:#FFFFFF;" d="M290.183,167.662v37.311c0,4.861,1.429,8.435,4.289,10.722c2.859,2.287,6.433,3.431,10.721,3.431
+									c4.289,0,7.862-1.143,10.721-3.431c2.859-2.287,4.289-5.861,4.289-10.722v-37.311h12.865v40.741
+									c0,6.577-2.645,12.151-7.934,16.725c-5.29,4.575-11.937,6.862-19.942,6.862c-8.005,0-14.653-2.287-19.942-6.862
+									c-5.29-4.574-7.934-10.149-7.934-16.725v-40.741H290.183L290.183,167.662z"></path>
+							</g>
+						</g>
+						<g class="flicker2" id="flashmarks">
+							<g>
+								<g>
+									<path style="fill:#FFFFFF;" d="M236.983,132.283c-0.732,1.117-0.258,2.734,1.039,3.628l0,0c1.288,0.901,2.961,0.777,3.755-0.288
+										l8.733-11.753c1.09-1.469,0.732-3.59-0.847-4.695l0,0c-1.579-1.094-3.695-0.7-4.691,0.847L236.983,132.283z"></path>
+									<path style="fill:#FFFFFF;" d="M162.306,136.309c0.853,1.033,2.53,1.056,3.767,0.085l0,0c1.237-0.969,1.625-2.603,0.832-3.675
+										l-8.652-11.809c-1.083-1.48-3.221-1.762-4.731-0.576l0,0c-1.513,1.179-1.762,3.319-0.585,4.733L162.306,136.309z"></path>
+									<path style="fill:#FFFFFF;" d="M201.183,121.86c0.087,1.335,1.427,2.349,2.997,2.299l0,0c1.566-0.053,2.839-1.15,2.841-2.483
+										l-0.015-14.637c0-1.837-1.555-3.327-3.473-3.261l0,0c-1.925,0.064-3.383,1.642-3.268,3.481L201.183,121.86z"></path>
+								</g>
+								<g>
+									<path style="fill:#FFFFFF;" d="M166.351,267.369c0.732-1.117,0.258-2.734-1.039-3.628l0,0c-1.288-0.901-2.961-0.777-3.754,0.288
+										l-8.733,11.753c-1.09,1.469-0.732,3.59,0.847,4.695l0,0c1.579,1.094,3.695,0.7,4.691-0.847L166.351,267.369z"></path>
+									<path style="fill:#FFFFFF;" d="M241.027,263.343c-0.853-1.033-2.53-1.056-3.767-0.085l0,0c-1.237,0.969-1.625,2.603-0.832,3.675
+										l8.652,11.809c1.083,1.48,3.221,1.762,4.731,0.576l0,0c1.513-1.179,1.762-3.319,0.585-4.733L241.027,263.343z"></path>
+									<path style="fill:#FFFFFF;" d="M202.15,277.792c-0.087-1.335-1.427-2.349-2.997-2.299l0,0c-1.566,0.053-2.839,1.15-2.841,2.483
+										l0.015,14.637c0,1.837,1.555,3.327,3.473,3.261l0,0c1.925-0.064,3.383-1.642,3.268-3.481L202.15,277.792z"></path>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img class="d-block w-100 img-fluid" src="src/menu_1.jpeg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100 img-fluid" src="src/menu_2.jpeg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+					  <img class="d-block w-100 img-fluid" src="src/menu_3.jpeg" alt="Third slide">
+					</div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
 				</div>
 			</li>
+			<!-- Menu tab ends -->
 			
-			<li class="jumbotron parallax home-banner" id="offers">
-				<div class="container parallax-background">
-					
-				</div>
+			<!-- Offers tab starts -->
+			<li class="offers-banner" id="offers">
+				<p class="flicker2"> Special Offers Section</p>
+				<ul class="list-group">
+				  <li class="list-group-item">Enjoy <b>UNLIMITED</b> Breakfast buffet - 9 A.M to 12 Noon @ <b>12$</b> per person. </li>
+				  <li class="list-group-item">Enjoy <b>UNLIMITED</b> Breakfast buffet - 9 A.M to 12 Noon @ <b>12$</b> per person. </li>
+				</ul>
 			</li>
+			<!-- Offers tab ends -->
 			
-			<li class="jumbotron parallax menu-banner" id="contact">
-				<div class="container parallax-background">
-					
-				</div>
+			<!-- Contact tab starts -->
+			<li class="contact-banner" id="contact">
+				<p class="font-heading text-center">Contact us</p>
+				
+				<section class="mb-4">					
+					<!--Section description-->
+					<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+						a matter of hours to help you.</p>
+
+					<div class="row">
+
+						<!--Grid column-->
+						<div class="col-md-9 mb-md-0 mb-5">
+							<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+								<!--Grid row-->
+								<div class="row">
+
+									<!--Grid column-->
+									<div class="col-md-6">
+										<div class="md-form mb-0">
+											<input type="text" id="name" name="name" class="form-control">
+											<label for="name" class="">Your name</label>
+										</div>
+									</div>
+									<!--Grid column-->
+
+									<!--Grid column-->
+									<div class="col-md-6">
+										<div class="md-form mb-0">
+											<input type="text" id="email" name="email" class="form-control">
+											<label for="email" class="">Your email</label>
+										</div>
+									</div>
+									<!--Grid column-->
+
+								</div>
+								<!--Grid row-->
+
+								<!--Grid row-->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="md-form mb-0">
+											<input type="text" id="subject" name="subject" class="form-control">
+											<label for="subject" class="">Subject</label>
+										</div>
+									</div>
+								</div>
+								<!--Grid row-->
+
+								<!--Grid row-->
+								<div class="row">
+
+									<!--Grid column-->
+									<div class="col-md-12">
+
+										<div class="md-form">
+											<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+											<label for="message">Your message</label>
+										</div>
+
+									</div>
+								</div>
+								<!--Grid row-->
+
+							</form>
+
+							<div class="text-center text-md-left">
+								<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+							</div>
+							<div class="status"></div>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-md-3 text-center">
+							<ul class="list-unstyled mb-0">
+								<li><i class="fas fa-map-marker-alt fa-2x"></i>
+									<p>39, Dunmore</p>
+									<p>St, Wentworthville 2146.</p>
+								</li>
+
+								<li><i class="fas fa-phone mt-4 fa-2x"></i>
+									<p>+ 04 147 084 08</p>
+									<p>+ 04 330 212 36</p>
+								</li>
+
+								<li><i class="fas fa-envelope mt-4 fa-2x"></i>
+									<p>contact@mdbootstrap.com</p>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+
+					</div>
+				</section>
 			</li>
-		</ul>
-		
-		
-		
+			<!-- Contact tab ends -->					
+		</ul>	
 	 
 	 
 		
